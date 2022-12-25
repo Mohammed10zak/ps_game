@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./style.css";
-import loginlogo from "./loginlogo.png";
-import joystick from "./joystick.png";
-import google from "./google.svg";
-import github from "./github.png";
-import twerr from "./twirr.svg";
-import linked from "./linked.png";
+import loginlogo from "../../images/loginlogo.png";
+import joystick from "../../images/joystick.png";
+import google from "../../images/google.svg";
+import github from "../../images/github.png";
+import twerr from "../../images/twirr.svg";
+import linked from "../../images/linked.png";
 import Button from "../../sections/Button";
 
 const initialData = {

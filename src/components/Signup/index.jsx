@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./style.css";
-import gamelogo from "./gamelogo.png";
-import google from "./google.svg";
-import bg from "./bg.png";
+import gamelogo from "../../images/gamelogo.png";
+import google from "../../images/google.svg";
+import bg from "../../images/bg.png";
 import Button from "../../sections/Button";
 
 const initialData = {
