@@ -1,0 +1,12 @@
+.reuse_btn {
+  width: 470px;
+
+  height: 64px;
+
+
+  background: #1565d8;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;     
+}

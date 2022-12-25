@@ -1,0 +1,99 @@
+.login {
+  display: flex;
+  gap: 40px;
+}
+
+.login_desc {
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+}
+
+.loginlogo {
+  width: 439px;
+  height: 103px;
+  margin-bottom: 100px;
+}
+
+.symbol_login {
+  letter-spacing: -15px;
+  margin-bottom: -30px;
+  font-family: "Gayathri";
+  font-size: 96px;
+  color: #bababa;
+}
+
+.game_desc_login {
+  width: 430px;
+  height: 160px;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #696f79;
+  font-style: italic;
+}
+
+.gamer_login {
+  width: 124px;
+  height: 38px;
+  font-size: 20px;
+  line-height: 38px;
+  color: #696f79;
+}
+
+.joystick {
+  width: 336px;
+  height: 418px;
+  margin-top: -80px;
+  margin-left: 300px;
+}
+
+.login_form {
+  margin-top: 100px;
+  gap: 50px;
+
+  width: 470px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form_login_title {
+  font-family: "Arial";
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.form_login_desc {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #8692a6;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.reg_anchor {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #696f79;
+  margin-top: -20px;
+}
+
+.reg_anchor a {
+  text-decoration: none;
+  color: #1565d8;
+}
