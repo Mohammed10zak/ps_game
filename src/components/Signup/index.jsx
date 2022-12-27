@@ -85,9 +85,10 @@ export default class Signup extends Component {
           <div className="gamer">Hideo Kojima</div>
           <div className="vector"></div>
         </div>
-        <a href="/#" className="back" onClick={this.props.toggle}>
+
+        <button className="back" onClick={this.props.toggle}>
           &lt; back
-        </a>
+        </button>
         <form className="sign_form" onSubmit={this.handleSubmit}>
           <div>
             <h3 className="form_sign_title">Register Individual Account!</h3>

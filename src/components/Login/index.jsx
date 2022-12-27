@@ -110,9 +110,8 @@ export default class Login extends Component {
           <Button myBtn={"Login"} />
           <div className="reg_anchor">
             Don’t have an account?
-            <a href="/#" onClick={this.props.toggle}>
-              Register
-            </a>
+            <button onClick={this.props.toggle} className="login_button" >Register</button>
+           
           </div>
         </form>
       </div>

@@ -64,12 +64,16 @@
 }
 
 .back {
-  text-decoration: none;
   padding: 50px;
-  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   color: #8692a6;
+  border: none;
+  height: 64px;
+  background: transparent;
+  font-family: "Arial";
+  font-style: bolder;
+  font-weight: 700;
 }
 
 .sign_form {
@@ -157,11 +161,11 @@ input {
 }
 
 .error {
-  margin-top: 10px ;
+  margin-top: 10px;
   font-size: large;
   color: red;
 }
 
-button{
+button {
   cursor: pointer;
 }
