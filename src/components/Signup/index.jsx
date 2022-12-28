@@ -4,31 +4,47 @@ import gamelogo from "../../images/gamelogo.png";
 import google from "../../images/google.svg";
 import bg from "../../images/bg.png";
 import Button from "../../sections/Button";
+import * as yup from "yup";
+import ProgressBar from "./Progressbar";
 
 const initialData = {
+  name: "abdooo",
   email: "mhmd@gsg.com",
   password: "mhmd123",
-  confirmpass: "mhmd123",
   checked: false,
 };
 
 const defaults = {
+  name: "",
   email: "",
   password: "",
   confirmpass: "",
   checked: false,
 };
 
+const regularExpression =
+  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 export default class Signup extends Component {
   state = {
+    name: "",
     email: "",
     password: "",
     confirmpass: "",
     checked: false,
     error: "",
-    message: "",
     myData: initialData,
   };
+
+  schema = yup.object().shape({
+    name: yup.string().min(6, "Name Should be more than 8").max(16).required(),
+    email: yup.string().email().required(),
+    password: yup.string().min(8).matches(regularExpression).required(),
+    confirmpass: yup
+      .string()
+      .oneOf([yup.ref("password"), null])
+      .required(),
+    checked: yup.boolean().oneOf([true]).required(),
+  });
 
   handleChangeInput = (e) => {
     const { value, id } = e.target;
@@ -39,33 +55,35 @@ export default class Signup extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.password === this.state.confirmpass) {
-      this.setState((prevState) => ({
-        myData: {
-          email: prevState.email,
-          password: prevState.password,
-          confirmpass: prevState.confirmpass,
-          checked: prevState.checked,
+
+    this.schema
+      .validate(
+        {
+          name: this.state.name,
+          email: this.state.email,
+          password: this.state.password,
+          confirmpass: this.state.confirmpass,
+          checked: this.state.checked,
         },
-        ...defaults,
-      }));
-    } else {
-      this.setState({ error: "check your passward inputs!" });
-    }
-  };
-
-  passwordStrength = (e) => {
-    const password = e.target.value;
-
-    if (
-      password < 8 &&
-      !password.match(/[!@#$%^&*]/) &&
-      !password.match(/[0-9]/) &&
-      !password.match(/[a-z]/) &&
-      !password.match(/[A-Z]/)
-    )
-      this.setState({ password });
-    this.setState({ message: "your passward is not a good" });
+        { abortEarly: false }
+      )
+      .then(() => {
+        console.log("valid");
+        this.setState((prevState) => ({
+          myData: {
+            name: prevState.name,
+            email: prevState.email,
+            password: prevState.password,
+            confirmpass: prevState.confirmpass,
+          },
+          ...defaults,
+        }));
+      })
+      .catch((e) =>
+        this.setState({
+          error: "Something error,Please check your input feild",
+        })
+      );
   };
 
   render() {
@@ -96,6 +114,21 @@ export default class Signup extends Component {
               For the purpose of gamers regulation, your details are required.
             </p>
           </div>
+          {this.state.error && <p className="error">{this.state.error}</p>}
+
+          <div>
+            <label htmlFor="name">User Name</label>
+            <div>
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+                onChange={this.handleChangeInput}
+                value={this.state.name}
+              />
+            </div>
+          </div>
+
           <div>
             <label htmlFor="email">Email address*</label>
             <div>
@@ -105,7 +138,6 @@ export default class Signup extends Component {
                 placeholder="Enter email address"
                 onChange={this.handleChangeInput}
                 value={this.state.email}
-                required
               />
             </div>
           </div>
@@ -119,11 +151,8 @@ export default class Signup extends Component {
                 onChange={this.handleChangeInput}
                 value={this.state.password}
                 onInput={this.passwordStrength}
-                required
               />
-              {this.state.message && (
-                <p className="error">{this.state.message}</p>
-              )}
+              {<ProgressBar password={this.state.password} />}
             </div>
           </div>
           <div>
@@ -135,9 +164,7 @@ export default class Signup extends Component {
                 placeholder="Repeat password"
                 onChange={this.handleChangeInput}
                 value={this.state.confirmpass}
-                required
               />
-              {this.state.error && <p className="error">{this.state.error}</p>}
             </div>
           </div>
           <div>
@@ -147,13 +174,12 @@ export default class Signup extends Component {
               checked={this.state.checked}
               onChange={this.handleChangeInput}
               name="checked"
-              required
             />
             <label htmlFor="repeatpassword*" className="label">
               I agree to terms & conditions
             </label>
           </div>
-          <Button myBtn={"Register Account"} />
+          <Button myBtn="Register Account" />
           <div className="or">Or</div>
           <div className="go_to_login">
             <img src={google} alt="google" className="google" />
