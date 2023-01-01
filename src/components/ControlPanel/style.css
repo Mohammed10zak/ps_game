@@ -1,0 +1,190 @@
+body {
+  overflow-x: hidden;
+}
+.control_panel {
+  transition: background 0.5s, color 0.5s;
+  display: flex;
+  gap: 20px;
+}
+
+.side_bar {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.icons img {
+  width: 60px;
+}
+
+.bar {
+  margin-top: 60px;
+  padding: 4px;
+  height: 130vh;
+  background: #ffffff;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 38px;
+}
+
+.user {
+  position: absolute;
+  width: 300px;
+  left: 71vw;
+  top: 20px;
+  font-family: "Arial";
+  font-size: 32px;
+  text-align: right;
+}
+
+.user_img {
+  position: absolute;
+  left: 92vw;
+  top: 22px;
+  width: 80px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 40px 10px;
+  gap: 80px;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.played_list {
+  margin: auto 20px;
+}
+
+.list_played {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.last_played {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.last_games {
+  display: flex;
+  gap: 50px;
+}
+
+.trophy {
+  position: relative;
+  margin-left: 20px;
+}
+
+.tropyh_title {
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.trophy_img {
+  width: 570px;
+  height: 330px;
+}
+
+.win {
+  position: absolute;
+  width: 120px;
+  top: -2px;
+  right: -5px;
+  z-index: 100;
+}
+
+.win_shadow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -20px;
+  top: -20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 27px 10px #32fb00,
+    inset 0px 0px 36px 32px rgb(50 251 0 / 68%);
+}
+
+.trophy_desc {
+  position: absolute;
+  width: 245px;
+  left: 180px;
+  top: 8px;
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: -31px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.trophy_desc_2 {
+  display: block;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.last_time {
+  position: absolute;
+  width: 520px;
+  top: 196px;
+  font-family: "Arial";
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 0px 0px 45px 45px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.last_time_2 {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.friends {
+  margin-left: 30px;
+}
+
+.friends p {
+  font-family: "Arial";
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.btn_theme {
+  background-color: transparent;
+  border: none;
+}
+
+/* Dark theme styles */
+.control_panel.theme-dark {
+  background: #222222;
+  color: #ffffff;
+}
+
+.control_panel.theme-dark .bar {
+  background: #222222;
+  box-shadow: inset 2px 4px 4px rgba(255, 255, 255, 0.57);
+  border-radius: 38px;
+}

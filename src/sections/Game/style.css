@@ -1,0 +1,34 @@
+.game_card {
+  position: relative;
+}
+
+.game_card_background {
+  border-radius: 60px;
+  width: 520px;
+}
+
+.desc_game {
+  position: absolute;
+  left: 23.38%;
+  right: 4%;
+  top: 65%;
+  font-family: "Arial";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.desc_game.direction {
+  position: absolute;
+  left: 5%;
+  right: 35%;
+  top: 40%;
+  font-family: "Arial";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 31px;
+  text-align: left;
+  color: #ffffff;
+}

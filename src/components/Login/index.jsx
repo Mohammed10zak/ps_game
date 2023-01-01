@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
+
 import loginlogo from "../../images/loginlogo.png";
 import joystick from "../../images/joystick.png";
 import google from "../../images/google.svg";
@@ -106,12 +108,13 @@ export default class Login extends Component {
               />
             </div>
           </div>
+          <Link to="/controlPanel">
+            <Button myBtn={"Login"} />
+          </Link>
 
-          <Button myBtn={"Login"} />
           <div className="reg_anchor">
             Don’t have an account?
-            <button onClick={this.props.toggle} className="login_button" >Register</button>
-           
+            <Link to="/signup">Register</Link>
           </div>
         </form>
       </div>
