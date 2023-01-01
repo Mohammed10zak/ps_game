@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ps_game/static/css/main.1ac497e8.css",
-    "main.js": "/ps_game/static/js/main.854a8525.js",
+    "main.js": "/ps_game/static/js/main.d5df345a.js",
     "static/media/bg.png": "/ps_game/static/media/bg.448b03ee95d135fb5b50.png",
     "static/media/trophy.png": "/ps_game/static/media/trophy.b3e3487324282af3a67c.png",
     "static/media/GODOFWAR2.png": "/ps_game/static/media/GODOFWAR2.3cc397b6ae5caff9855a.png",
@@ -20,10 +20,10 @@
     "static/media/twirr.svg": "/ps_game/static/media/twirr.cf16f83382dd139748226d3d515de1c5.svg",
     "index.html": "/ps_game/index.html",
     "main.1ac497e8.css.map": "/ps_game/static/css/main.1ac497e8.css.map",
-    "main.854a8525.js.map": "/ps_game/static/js/main.854a8525.js.map"
+    "main.d5df345a.js.map": "/ps_game/static/js/main.d5df345a.js.map"
   },
   "entrypoints": [
     "static/css/main.1ac497e8.css",
-    "static/js/main.854a8525.js"
+    "static/js/main.d5df345a.js"
   ]
 }
