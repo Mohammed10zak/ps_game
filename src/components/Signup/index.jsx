@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import "./style.css";
+
+import { Link } from "react-router-dom";
+import * as yup from "yup";
+
+import Button from "../../sections/Button";
+
 import gamelogo from "../../images/gamelogo.png";
 import google from "../../images/google.svg";
 import bg from "../../images/bg.png";
-import Button from "../../sections/Button";
-import * as yup from "yup";
-import ProgressBar from "./Progressbar";
+import ProgressBar from '../../sections/ProgressBar';
 
 const initialData = {
   name: "abdooo",
@@ -81,7 +85,7 @@ export default class Signup extends Component {
       })
       .catch((e) =>
         this.setState({
-          error: "Something error,Please check your input feild",
+          error: "Something error,Please check your input fields!",
         })
       );
   };
@@ -103,10 +107,10 @@ export default class Signup extends Component {
           <div className="gamer">Hideo Kojima</div>
           <div className="vector"></div>
         </div>
-
-        <button className="back" onClick={this.props.toggle}>
+        <Link to="/login" className="back">
           &lt; back
-        </button>
+        </Link>
+
         <form className="sign_form" onSubmit={this.handleSubmit}>
           <div>
             <h3 className="form_sign_title">Register Individual Account!</h3>
@@ -184,12 +188,10 @@ export default class Signup extends Component {
           <div className="go_to_login">
             <img src={google} alt="google" className="google" />
 
-            <button
-              className="login_button"
-              type="button"
-              onClick={this.props.toggle}
-            >
-              login
+            <button className="login_button" type="button">
+              <Link to="/login" className="link_to_login">
+                login
+              </Link>
             </button>
           </div>
         </form>

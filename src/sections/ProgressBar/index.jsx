@@ -1,3 +1,4 @@
+import './style.css'
 export default function ProgressBar(props) {
   const password = props.password;
   let width = 0;
