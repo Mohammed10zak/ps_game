@@ -10,10 +10,11 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup-form" element={<Signup />} />
+        <Route path="/ps_game" element={<Signup />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/controlPanel" element={<ControlPanel />} />
+        <Route path="*" element={<h1>Page Not Found 404</h1>} />
       </Routes>
     </div>
   );
