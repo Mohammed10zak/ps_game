@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/signup-form/static/css/main.1ac497e8.css",
-    "main.js": "/signup-form/static/js/main.d7811c4c.js",
-    "static/media/bg.png": "/signup-form/static/media/bg.448b03ee95d135fb5b50.png",
-    "static/media/trophy.png": "/signup-form/static/media/trophy.b3e3487324282af3a67c.png",
-    "static/media/GODOFWAR2.png": "/signup-form/static/media/GODOFWAR2.3cc397b6ae5caff9855a.png",
-    "static/media/SPIDERMAN.png": "/signup-form/static/media/SPIDERMAN.482c7273280473214740.png",
-    "static/media/SUPERMAN2.png": "/signup-form/static/media/SUPERMAN2.eaa82ccaab8f8c1bb645.png",
-    "static/media/joystick.png": "/signup-form/static/media/joystick.899607da9aff55bcffb2.png",
-    "static/media/FRIENDS.png": "/signup-form/static/media/FRIENDS.db216627e457bac5f249.png",
-    "static/media/jeny.png": "/signup-form/static/media/jeny.25b355893ba8e77578ca.png",
-    "static/media/win.png": "/signup-form/static/media/win.650e46225bc98646ae62.png",
-    "static/media/play1.png": "/signup-form/static/media/play1.7ca3bea83336e1d5ba5f.png",
-    "static/media/play3.png": "/signup-form/static/media/play3.34508981c9aacfc400ff.png",
-    "static/media/play2.png": "/signup-form/static/media/play2.e7c7eb208d749d056bcb.png",
-    "static/media/play4.png": "/signup-form/static/media/play4.3181d4a9a1470cd3d1b7.png",
-    "static/media/newgame.svg": "/signup-form/static/media/newgame.ffc71abb40826505abca6ba4223782be.svg",
-    "static/media/google.svg": "/signup-form/static/media/google.c3c756b00d59e918ba8da412e4109bf5.svg",
-    "static/media/twirr.svg": "/signup-form/static/media/twirr.cf16f83382dd139748226d3d515de1c5.svg",
-    "index.html": "/signup-form/index.html",
-    "main.1ac497e8.css.map": "/signup-form/static/css/main.1ac497e8.css.map",
-    "main.d7811c4c.js.map": "/signup-form/static/js/main.d7811c4c.js.map"
+    "main.css": "/PS-Games/static/css/main.1ac497e8.css",
+    "main.js": "/PS-Games/static/js/main.373e888c.js",
+    "static/media/bg.png": "/PS-Games/static/media/bg.448b03ee95d135fb5b50.png",
+    "static/media/trophy.png": "/PS-Games/static/media/trophy.b3e3487324282af3a67c.png",
+    "static/media/GODOFWAR2.png": "/PS-Games/static/media/GODOFWAR2.3cc397b6ae5caff9855a.png",
+    "static/media/SPIDERMAN.png": "/PS-Games/static/media/SPIDERMAN.482c7273280473214740.png",
+    "static/media/SUPERMAN2.png": "/PS-Games/static/media/SUPERMAN2.eaa82ccaab8f8c1bb645.png",
+    "static/media/joystick.png": "/PS-Games/static/media/joystick.899607da9aff55bcffb2.png",
+    "static/media/FRIENDS.png": "/PS-Games/static/media/FRIENDS.db216627e457bac5f249.png",
+    "static/media/jeny.png": "/PS-Games/static/media/jeny.25b355893ba8e77578ca.png",
+    "static/media/win.png": "/PS-Games/static/media/win.650e46225bc98646ae62.png",
+    "static/media/play1.png": "/PS-Games/static/media/play1.7ca3bea83336e1d5ba5f.png",
+    "static/media/play3.png": "/PS-Games/static/media/play3.34508981c9aacfc400ff.png",
+    "static/media/play2.png": "/PS-Games/static/media/play2.e7c7eb208d749d056bcb.png",
+    "static/media/play4.png": "/PS-Games/static/media/play4.3181d4a9a1470cd3d1b7.png",
+    "static/media/newgame.svg": "/PS-Games/static/media/newgame.ffc71abb40826505abca6ba4223782be.svg",
+    "static/media/google.svg": "/PS-Games/static/media/google.c3c756b00d59e918ba8da412e4109bf5.svg",
+    "static/media/twirr.svg": "/PS-Games/static/media/twirr.cf16f83382dd139748226d3d515de1c5.svg",
+    "index.html": "/PS-Games/index.html",
+    "main.1ac497e8.css.map": "/PS-Games/static/css/main.1ac497e8.css.map",
+    "main.373e888c.js.map": "/PS-Games/static/js/main.373e888c.js.map"
   },
   "entrypoints": [
     "static/css/main.1ac497e8.css",
-    "static/js/main.d7811c4c.js"
+    "static/js/main.373e888c.js"
   ]
 }
