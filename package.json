@@ -1,7 +1,6 @@
 {
-  "homepage": "https://Mohammed10zak.github.io/ps_game",
 
-  "name": "login-page",
+  "name": "ps-game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
