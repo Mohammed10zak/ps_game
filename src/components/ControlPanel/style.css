@@ -53,18 +53,20 @@ body {
   width: 80px;
 }
 
+.games {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: scroll;
+  width: 1365px;
+}
+
 .game {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
   padding: 40px 10px;
   gap: 80px;
-}
-
-.games {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
 }
 
 .played_list {
