@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ps_game/static/css/main.1ac497e8.css",
+    "main.css": "/ps_game/static/css/main.e7dc497d.css",
     "main.js": "/ps_game/static/js/main.d5df345a.js",
     "static/media/bg.png": "/ps_game/static/media/bg.448b03ee95d135fb5b50.png",
     "static/media/trophy.png": "/ps_game/static/media/trophy.b3e3487324282af3a67c.png",
@@ -19,11 +19,11 @@
     "static/media/google.svg": "/ps_game/static/media/google.c3c756b00d59e918ba8da412e4109bf5.svg",
     "static/media/twirr.svg": "/ps_game/static/media/twirr.cf16f83382dd139748226d3d515de1c5.svg",
     "index.html": "/ps_game/index.html",
-    "main.1ac497e8.css.map": "/ps_game/static/css/main.1ac497e8.css.map",
+    "main.e7dc497d.css.map": "/ps_game/static/css/main.e7dc497d.css.map",
     "main.d5df345a.js.map": "/ps_game/static/js/main.d5df345a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ac497e8.css",
+    "static/css/main.e7dc497d.css",
     "static/js/main.d5df345a.js"
   ]
 }
