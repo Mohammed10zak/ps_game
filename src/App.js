@@ -7,7 +7,7 @@ import React, { Component } from "react";
 import Profile from "./pages/Profile";
 import UserList from "./pages/UserList";
 import UserDetails from "./pages/UserDetails/index";
-import ProtectedRoute from './components/ProtectedRoute';
+import ProtectedRoute from "./components/ProtectedRoute";
 
 export default class App extends Component {
   state = {
@@ -23,23 +23,23 @@ export default class App extends Component {
     const admin = localStorage.getItem("Admin");
     if (admin !== "true") {
       this.setState({ isAdmin: false });
-    }else {
-      this.setState({isAdmin:true})
+    } else {
+      this.setState({ isAdmin: true });
     }
   }
-  
+
   login = () => this.setState({ isAuthorized: true });
-  
+
   admin = () => {
     this.setState({ isAdmin: true });
   };
-  
+
   logout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("username");
     localStorage.removeItem("email");
     localStorage.removeItem("Admin");
-    
+
     this.setState({ isAuthorized: false });
   };
 
@@ -85,9 +85,10 @@ export default class App extends Component {
               />
             }
           />
-          <Route path="/profile" element={<Profile 
-                admin={this.state.isAdmin}
-                />} />
+          <Route
+            path="/profile"
+            element={<Profile admin={this.state.isAdmin} />}
+          />
           <Route
             path="userslist/:id"
             element={
