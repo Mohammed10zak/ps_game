@@ -69,6 +69,7 @@
   font-family: "Arial";
   font-weight: 700;
   text-decoration: none;
+  height: 1px;
 }
 
 .sign_form {
@@ -168,8 +169,6 @@ input {
 button {
   cursor: pointer;
 }
-
-
 
 .link_to_login {
   text-decoration: none;

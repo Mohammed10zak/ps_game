@@ -1,0 +1,38 @@
+.users_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.users_details h3 {
+  font-size: 32px;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.details {
+  text-align: left;
+  color: aliceblue;
+  list-style: none;
+  line-height: 40px;
+  background-color: #667;
+  border-radius: 20px;
+  padding: 25px;
+  width: 350px;
+  margin: 20px 0;
+}
+
+.details div {
+  margin-bottom: 10px;
+}
+
+.details div:last-child {
+  margin-bottom: 0;
+}
+
+.loading {
+  font-size: 20px;
+  text-align: center;
+}

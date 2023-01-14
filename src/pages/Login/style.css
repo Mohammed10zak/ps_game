@@ -97,3 +97,12 @@
   text-decoration: none;
   color: #1565d8;
 }
+
+.passwordshow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+right: 280px;
+margin-top: 20px;
+
+}

@@ -1,5 +1,6 @@
-import React, { Component } from "react";
 import "./style.css";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import Game from "../../sections/Game";
 import LastPlayed from "../../sections/LastPlayed";
@@ -21,11 +22,16 @@ import trophy from "../../images/trophy.png";
 import win from "../../images/win.png";
 import winframe from "../../images/winframe.png";
 import FRIENDS from "../../images/FRIENDS.png";
+import logout from "../../images/logout.png";
+
 
 export default class ControlPanel extends Component {
-  state = {
-    theme: "default",
-  };
+  state = { theme: "default", username: "" };
+
+  async componentDidMount(e) {
+    const username = localStorage.getItem("username");
+    this.setState({ username });
+  }
 
   changeTheme = (newTheme) => {
     this.setState({ theme: newTheme });
@@ -68,8 +74,14 @@ export default class ControlPanel extends Component {
         </div>
         <div className="bar"></div>
         <main className="content">
-          <div className="user">Welcome back, Jenny!</div>
-          <img src={user_img} alt="user_img" className="user_img" />
+          <div className="user">Welcome back, {this.state.username}!</div>
+          <div>
+            <Link to="/profile">
+              <img src={user_img} alt="user_img" className="user_img" />
+            </Link>
+              <button onClick={this.props.logout} className="logout">   Log out <img  src={logout} alt="logout" className="logout_icon"/>
+              </button>
+          </div>
 
           <div className="game">
             <h1 className="game_title">NEW GAMES </h1>
@@ -135,6 +147,7 @@ export default class ControlPanel extends Component {
             <div className="friends">
               <p>friends</p>
               <img src={FRIENDS} alt="friends" className="friends_img" />
+             
             </div>
           </div>
         </main>

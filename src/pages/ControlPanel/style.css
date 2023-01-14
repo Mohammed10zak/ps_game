@@ -7,6 +7,25 @@ body {
   gap: 20px;
 }
 
+.logout {
+  font-size: 24px;
+  color: aliceblue;
+  background-color: #557;
+  position: absolute;
+
+  left: 88vw;
+  top: 2.2vw;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  width: 150px;
+}
+.logout_icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
 .side_bar {
   margin-top: 20px;
   margin-left: 20px;
@@ -39,7 +58,7 @@ body {
 .user {
   position: absolute;
   width: 300px;
-  left: 71vw;
+  left: 62vw;
   top: 20px;
   font-family: "Arial";
   font-size: 32px;
@@ -48,7 +67,7 @@ body {
 
 .user_img {
   position: absolute;
-  left: 92vw;
+  left: 82vw;
   top: 22px;
   width: 80px;
 }
@@ -58,7 +77,8 @@ body {
   flex-direction: row;
   gap: 20px;
   overflow-x: scroll;
-  width: 1365px;
+
+  width: 1366.5px;
 }
 
 .game {
@@ -189,4 +209,9 @@ body {
   background: #222222;
   box-shadow: inset 2px 4px 4px rgba(255, 255, 255, 0.57);
   border-radius: 38px;
+}
+@media (max-width: 800px) {
+  .games {
+    flex-direction: column;
+  }
 }
