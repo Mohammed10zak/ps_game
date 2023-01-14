@@ -2,12 +2,12 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Signup from "./pages/Signup/index";
 import Login from "./pages/Login/index";
-import ProtectedRoute from "./pages/ProtectedRoute";
 
 import React, { Component } from "react";
 import Profile from "./pages/Profile";
 import UserList from "./pages/UserList";
 import UserDetails from "./pages/UserDetails/index";
+import ProtectedRoute from './components/ProtectedRoute';
 
 export default class App extends Component {
   state = {

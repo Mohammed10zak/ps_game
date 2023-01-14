@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Navigate } from "react-router-dom";
-import ControlPanel from "./ControlPanel/index";
+import ControlPanel from "../pages/ControlPanel/index";
 
 export default class ProtectedRoute extends Component {
   render() {
